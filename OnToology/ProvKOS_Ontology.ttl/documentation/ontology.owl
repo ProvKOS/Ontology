@@ -11,7 +11,6 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://w3id.org/def/ProvKOS">
-        <owl:versionIRI rdf:resource="https://w3id.org/def/ProvKOS/1.0"/>
         <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
         <rdfs:comment>revised at apr 15 2024</rdfs:comment>
