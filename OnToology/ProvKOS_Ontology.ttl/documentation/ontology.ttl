@@ -7,7 +7,7 @@
 @base <https://w3id.org/def/ProvKOS#> .
 
 <https://w3id.org/def/ProvKOS> rdf:type owl:Ontology ;
-                                owl:versionIRI <https://w3id.org/def/ProvKOS/1.0> ;
+                                owl:versionIRI <https://w3id.org/def/ProvKOS/1.0#> ;
                                 owl:imports <http://www.w3.org/2004/02/skos/core> ,
                                             <http://www.w3.org/ns/prov-o-20130430> ;
                                 rdfs:comment "revised at apr 15 2024" ;

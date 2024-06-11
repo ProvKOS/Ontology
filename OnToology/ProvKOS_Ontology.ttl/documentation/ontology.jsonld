@@ -145,7 +145,7 @@
     "@id" : "http://www.w3.org/ns/prov-o-20130430"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://w3id.org/def/ProvKOS/1.0"
+    "@id" : "https://w3id.org/def/ProvKOS/1.0#"
   } ]
 }, {
   "@id" : "https://w3id.org/def/ProvKOS/1.0#Class_number",
