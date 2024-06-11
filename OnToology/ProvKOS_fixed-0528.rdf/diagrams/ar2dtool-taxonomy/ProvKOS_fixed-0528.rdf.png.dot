@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://purl.dataone.org/provone/2015/01/15/ontology#Warrant" "ProvKOS2:Truncation" "ProvKOS2:Expansion" "prov:Agent" "ProvKOS2:Literature" "ProvKOS2:Relocation" "prov:SoftwareAgent" "prov:Organization" "prov:Entity" "ProvKOS3:Document" "skos-xl:Label" "prov:Activity" "ProvKOS2:Replacement" "prov:Person" "ProvKOS2:Class_number" "prov:Influence" "prov:End" "prov:Derivation" "prov:Quotation" "prov:Collection" "prov:InstantaneousEvent" "prov:Delegation" "prov:Invalidation" "prov:Bundle" "prov:Usage" "prov:Attribution" "prov:PrimarySource" "owl:Thing" "prov:ActivityInfluence" "prov:EmptyCollection" "prov:Revision" "prov:Communication" "prov:Association" "prov:Start" "prov:Plan" "prov:EntityInfluence" "prov:AgentInfluence" "prov:Generation" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+	"prov:Revision" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"skos:Concept" -> "http://purl.dataone.org/provone/2015/01/15/ontology#Warrant" [ label = "rdfs:subClassOf" ];
+	"prov:Association" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:EmptyCollection" -> "prov:Collection" [ label = "rdfs:subClassOf" ];
+	"prov:Derivation" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Plan" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"skos:ConceptScheme" -> "http://purl.dataone.org/provone/2015/01/15/ontology#Warrant" [ label = "rdfs:subClassOf" ];
+	"ProvKOS2:Replacement" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Attribution" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Bundle" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Communication" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:EntityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:PrimarySource" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:SoftwareAgent" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"http://purl.dataone.org/provone/2015/01/15/ontology#Warrant" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"prov:Person" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"ProvKOS2:Truncation" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"ProvKOS2:Class_number" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:AgentInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"skos:OrderedCollection" -> "skos:Collection" [ label = "rdfs:subClassOf" ];
+	"ProvKOS2:Relocation" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Entity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"prov:Quotation" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"ProvKOS3:Document" -> "http://purl.dataone.org/provone/2015/01/15/ontology#Warrant" [ label = "rdfs:subClassOf" ];
+	"prov:Collection" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Agent" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"prov:Activity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"ProvKOS2:Expansion" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Organization" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"skos-xl:Label" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"ProvKOS2:Literature" -> "http://purl.dataone.org/provone/2015/01/15/ontology#Warrant" [ label = "rdfs:subClassOf" ];
+	"prov:ActivityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:Delegation" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+
+}

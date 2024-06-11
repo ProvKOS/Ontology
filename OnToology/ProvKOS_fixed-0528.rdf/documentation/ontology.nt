@@ -1,0 +1,406 @@
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS> <http://www.w3.org/2002/07/owl#versionIRI> <http://www.semanticweb.org/choii/ontologies/2024/0/ProvKOS/1.1> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-20130430> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS> <http://www.w3.org/2000/01/rdf-schema#comment> "revised at apr 15 2024" .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "Inkyung Choi" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/identifier
+<http://purl.org/dc/elements/1.1/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://www.w3.org/2000/01/rdf-schema#label> "cite"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://www.w3.org/2004/02/skos/core#definition> "Subclasses of Warrant cite other subclasses of Warrant."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://www.w3.org/2000/01/rdf-schema#label> "hasLabel"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://www.w3.org/2004/02/skos/core#definition> "ClassNumber has the associated human readable label. One might distinguish a preferred label and an alternative label by using skosxl:prefLabel and skosxl:altLabel for tracking changes to all types of labels."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasAuthorizedBy"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy> <http://www.w3.org/2004/02/skos/core#definition> "An 'unassigned' number is being used to represent a concept."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasDeprecatedBy
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasDeprecatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasDeprecatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasDeprecatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasDeprecatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasDeprecatedBy"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasDeprecatedBy> <http://www.w3.org/2004/02/skos/core#definition> "The existing Class Number is deprecated becoming 'unassigned' ."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasWarrantedBy"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.w3.org/2004/02/skos/core#definition> "Acitivty was performed based on editorial Warrant."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#invalidated
+<http://www.w3.org/ns/prov#invalidated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasAttributedTo
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAttributedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Entity> .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasInvalidatedBy
+<http://www.w3.org/ns/prov#wasInvalidatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/prov#wasRevisionOf
+<http://www.w3.org/ns/prov#wasRevisionOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#notation
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.w3.org/2008/05/skos-xl#literalForm
+<http://www.w3.org/2008/05/skos-xl#literalForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2008/05/skos-xl#literalForm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://www.w3.org/2008/05/skos-xl#literalForm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.w3.org/2008/05/skos-xl#literalForm> <http://www.w3.org/2000/01/rdf-schema#label> "literalForm"@en .
+# 
+# http://www.w3.org/ns/prov#endedAtTime
+<http://www.w3.org/ns/prov#endedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.w3.org/ns/prov#startedAtTime
+<http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.dataone.org/provone/2015/01/15/ontology#Warrant
+<http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/prov#Entity> .
+<http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> <http://www.w3.org/2000/01/rdf-schema#label> "Warrant"@en .
+<http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> <http://www.w3.org/2004/02/skos/core#definition> "Any identifiable sources providing evidence warranted for editorial decision making."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> <http://www.w3.org/2000/01/rdf-schema#label> "Class Number"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> <http://www.w3.org/2004/02/skos/core#definition> "ClassNumber is a numeric or alphanumeric notation to represent a concept. A concept is defined as a unit of thought, specific ideas or meanings established within a KOS. ClassNumber is assignable to classify information resources.An instance of ClassNumber may be named with a URI."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Expansion
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Expansion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Expansion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Expansion> <http://www.w3.org/2000/01/rdf-schema#label> "Expansion"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Expansion> <http://www.w3.org/2004/02/skos/core#definition> "An expansion is when a concept is extended and the class number moves down to the narrower hierarchy."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Literature
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Literature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Literature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Literature> <http://www.w3.org/2000/01/rdf-schema#label> "Literature"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Literature> <http://www.w3.org/2004/02/skos/core#definition> "Citable literature providing an evidence warranted for editorial decision making."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Relocation
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Relocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Relocation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Relocation> <http://www.w3.org/2000/01/rdf-schema#label> "Relocation"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Relocation> <http://www.w3.org/2004/02/skos/core#definition> "A relocation is moving a concept from a class number to another class number, this movement is outside of the hierarchical tree."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Replacement
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Replacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Replacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Replacement> <http://www.w3.org/2000/01/rdf-schema#label> "Replacement"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Replacement> <http://www.w3.org/2004/02/skos/core#definition> "A replacement is having a label is replaced with another label."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Truncation
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Truncation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Truncation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Truncation> <http://www.w3.org/2000/01/rdf-schema#label> "Truncation"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Truncation> <http://www.w3.org/2004/02/skos/core#altLabel> "Discontinuation"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Truncation> <http://www.w3.org/2004/02/skos/core#definition> "A truncation is having a concept generalized thus the class number moves up to the broader hierarchy."@en .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/Document
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/Document> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@en .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/Document> <http://www.w3.org/2004/02/skos/core#definition> "Documents to record editorial process which include proposals of changes, discussions of proposals, and suggested changes and its impacts."@en .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> .
+# 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.dataone.org/provone/2015/01/15/ontology#Warrant> .
+# 
+# http://www.w3.org/2008/05/skos-xl#Label
+<http://www.w3.org/2008/05/skos-xl#Label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2008/05/skos-xl#Label> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<http://www.w3.org/2008/05/skos-xl#Label> <http://www.w3.org/2000/01/rdf-schema#label> "Label"@en .
+<http://www.w3.org/2008/05/skos-xl#Label> <http://www.w3.org/2004/02/skos/core#definition> "The class skosxl:Label is a special class of lexical entities. An instance of the class skosxl:Label is a resource and may be named with a URI. An instance of the class skosxl:Label has a single literal form. (from SKOS-XL)"@en .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.w3.org/ns/prov#Entity
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://www.w3.org/ns/prov#Organization
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+# 
+# http://www.w3.org/ns/prov#Person
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+# 
+# http://www.w3.org/ns/prov#SoftwareAgent
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/prov#SoftwareAgent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# doi:10.4103/0253-7176.175131
+<doi:10.4103/0253-7176.175131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<doi:10.4103/0253-7176.175131> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Literature> .
+<doi:10.4103/0253-7176.175131> <http://www.w3.org/2000/01/rdf-schema#label> "Transvestism as a Symptom: A Case Series" .
+# 
+# http://dewey.org/distributionserver/subscriptions/feed/23/349210
+<http://dewey.org/distributionserver/subscriptions/feed/23/349210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349210> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Relocation> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349210> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349210> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349210> <http://www.w3.org/ns/prov#endedAtTime> "2023-07-27T21:39:54Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349210> <http://purl.org/dc/elements/1.1/identifier> "349210"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349210> <http://purl.org/dc/elements/1.1/title> "DDC_Updates_OvernightPublication_2023-07-27T21:39:54Z_CLASS" .
+# 
+# http://dewey.org/distributionserver/subscriptions/feed/23/349291
+<http://dewey.org/distributionserver/subscriptions/feed/23/349291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349291> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Activity> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349291> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S61.1> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349291> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349291> <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T02:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349291> <http://www.w3.org/2000/01/rdf-schema#comment> "example entry" .
+# 
+# http://dewey.org/distributionserver/subscriptions/feed/23/349292
+<http://dewey.org/distributionserver/subscriptions/feed/23/349292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349292> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Replacement> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349292> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/wasWarrantedBy> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S61.1> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349292> <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349292> <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T02:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://dewey.org/distributionserver/subscriptions/feed/23/349292> <http://www.w3.org/2000/01/rdf-schema#comment> "example entry 2" .
+# 
+# http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Fetishism> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349210> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP> <http://www.w3.org/ns/prov#wasRevisionOf> <http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP> <http://www.w3.org/2004/02/skos/core#notation> "306.777"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3DRfcxd8jjtkvp3XXWXHfjPpP> <http://www.w3.org/2000/01/rdf-schema#label> "306.777"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Transvestism> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasDeprecatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349210> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk> <http://www.w3.org/2004/02/skos/core#notation> "306.778"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3GQ8rk8bjxTBKVkTvPrQ7wHfk> <http://www.w3.org/2000/01/rdf-schema#label> "306.778"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3Jxr34DkWhyDWrdq3cdRbfYWg
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3Jxr34DkWhyDWrdq3cdRbfYWg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3Jxr34DkWhyDWrdq3cdRbfYWg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3Jxr34DkWhyDWrdq3cdRbfYWg> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Depressive_disorder> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3Jxr34DkWhyDWrdq3cdRbfYWg> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Depressive_disorder_and_dysphoria> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3Jxr34DkWhyDWrdq3cdRbfYWg> <http://www.w3.org/2004/02/skos/core#notation> "616.8527"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E3Jxr34DkWhyDWrdq3cdRbfYWg> <http://www.w3.org/2000/01/rdf-schema#label> "616.8527"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E48yPt8wm8G9fB6Qkq773mfm9m
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E48yPt8wm8G9fB6Qkq773mfm9m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E48yPt8wm8G9fB6Qkq773mfm9m> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E48yPt8wm8G9fB6Qkq773mfm9m> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Sexual_disorders> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E48yPt8wm8G9fB6Qkq773mfm9m> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Sexual_disorders_and_gender-identity_disorders> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E48yPt8wm8G9fB6Qkq773mfm9m> <http://www.w3.org/2004/02/skos/core#notation> "616.8583"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/E48yPt8wm8G9fB6Qkq773mfm9m> <http://www.w3.org/2000/01/rdf-schema#label> "616.8583"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Cross_dressing> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#wasAuthorizedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349210> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68> <http://www.w3.org/2004/02/skos/core#notation> "391.68"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68> <http://www.w3.org/2000/01/rdf-schema#comment> "example class iri 1" .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/391.68> <http://www.w3.org/2000/01/rdf-schema#label> "391.68"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/616.85277
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/616.85277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/616.85277> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Class_number> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/616.85277> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#hasLabel> <http://example.org#Gender_dysphoria> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/616.85277> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349291> .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/616.85277> <http://www.w3.org/2000/01/rdf-schema#comment> "example class iri 2" .
+<http://deweyldws01dxm1.dev.oclc.org:8080/e23/class/616.85277> <http://www.w3.org/2000/01/rdf-schema#label> "616.85277"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://example.org#Cross_dressing
+<http://example.org#Cross_dressing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Cross_dressing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Cross_dressing> <http://www.w3.org/2008/05/skos-xl#literalForm> "Cross dressing" .
+# 
+# http://example.org#DDC_Editoral_committee
+<http://example.org#DDC_Editoral_committee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#DDC_Editoral_committee> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Organization> .
+# 
+# http://example.org#DSM-5
+<http://example.org#DSM-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#DSM-5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://example.org#Depressive_disorder
+<http://example.org#Depressive_disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Depressive_disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Depressive_disorder> <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> .
+<http://example.org#Depressive_disorder> <http://www.w3.org/2008/05/skos-xl#literalForm> "Depressive disorder" .
+# 
+# http://example.org#Depressive_disorder_and_dysphoria
+<http://example.org#Depressive_disorder_and_dysphoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Depressive_disorder_and_dysphoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Depressive_disorder_and_dysphoria> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> .
+<http://example.org#Depressive_disorder_and_dysphoria> <http://www.w3.org/ns/prov#wasRevisionOf> <http://example.org#Depressive_disorder> .
+<http://example.org#Depressive_disorder_and_dysphoria> <http://www.w3.org/2008/05/skos-xl#literalForm> "Depressive disorder and dysphoria" .
+# 
+# http://example.org#Fetishism
+<http://example.org#Fetishism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Fetishism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Fetishism> <http://www.w3.org/2008/05/skos-xl#literalForm> "Fetishism" .
+# 
+# http://example.org#Gender_dysphoria
+<http://example.org#Gender_dysphoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Gender_dysphoria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Gender_dysphoria> <http://www.w3.org/2008/05/skos-xl#literalForm> "Gender dysphoria" .
+# 
+# http://example.org#ICD-11
+<http://example.org#ICD-11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#ICD-11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# 
+# http://example.org#KOS_Concept_2
+<http://example.org#KOS_Concept_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#KOS_Concept_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://example.org#KOS_Concept_2> <http://www.w3.org/2004/02/skos/core#inScheme> <http://example.org#ICD-11> .
+# 
+# http://example.org#KOS_Concept_3
+<http://example.org#KOS_Concept_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#KOS_Concept_3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://example.org#KOS_Concept_3> <http://www.w3.org/2004/02/skos/core#inScheme> <https://homosaurus.org/v3> .
+# 
+# http://example.org#Sexual_disorders
+<http://example.org#Sexual_disorders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Sexual_disorders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Sexual_disorders> <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> .
+<http://example.org#Sexual_disorders> <http://www.w3.org/ns/prov#wasRevisionOf> <http://example.org#Sexual_disorders_and_gender-identity_disorders> .
+<http://example.org#Sexual_disorders> <http://www.w3.org/2008/05/skos-xl#literalForm> "sexual disorders" .
+# 
+# http://example.org#Sexual_disorders_and_gender-identity_disorders
+<http://example.org#Sexual_disorders_and_gender-identity_disorders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Sexual_disorders_and_gender-identity_disorders> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Sexual_disorders_and_gender-identity_disorders> <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> .
+<http://example.org#Sexual_disorders_and_gender-identity_disorders> <http://www.w3.org/2008/05/skos-xl#literalForm> "Sexual disorders and gender-identity disorders" .
+# 
+# http://example.org#Transvestism
+<http://example.org#Transvestism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://example.org#Transvestism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+<http://example.org#Transvestism> <http://www.w3.org/2008/05/skos-xl#literalForm> "Transvetism" .
+# 
+# http://www.example.org#KOS_Concept_0
+<http://www.example.org#KOS_Concept_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org#KOS_Concept_0> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.example.org#KOS_Concept_0> <http://www.w3.org/2004/02/skos/core#inScheme> <https://homosaurus.org/v3> .
+# 
+# http://www.example.org#KOS_Concept_1
+<http://www.example.org#KOS_Concept_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.example.org#KOS_Concept_1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.example.org#KOS_Concept_1> <http://www.w3.org/2004/02/skos/core#inScheme> <http://example.org#ICD-11> .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/Document> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <doi:10.4103/0253-7176.175131> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://example.org#DSM-5> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://example.org#KOS_Concept_2> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://example.org#KOS_Concept_3> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S30.1> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> .
+# 
+# http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S61.1
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S61.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S61.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS/Document> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S61.1> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://www.example.org#KOS_Concept_0> .
+<http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#EPC_144-S61.1> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#cite> <http://www.example.org#KOS_Concept_1> .
+# 
+# https://homosaurus.org/v3
+<https://homosaurus.org/v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://homosaurus.org/v3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+<https://homosaurus.org/v3> <http://www.w3.org/2000/01/rdf-schema#label> "Homosaurus" .
+# 
+# https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder
+<https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/cc/ontologies/2024/0/ProvKOS#Literature> .
+<https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> <http://www.w3.org/2000/01/rdf-schema#label> "Transvestic Disorder" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
