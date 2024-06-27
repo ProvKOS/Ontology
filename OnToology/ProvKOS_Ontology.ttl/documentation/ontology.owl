@@ -118,23 +118,23 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#cite -->
+    <!-- https://w3id.org/def/ProvKOS#cite -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS/1.0#cite">
-        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS#cite">
+        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
         <rdfs:label xml:lang="en">cite</rdfs:label>
         <skos:definition xml:lang="en">Subclasses of Warrant cite other subclasses of Warrant.</skos:definition>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#hasLabel -->
+    <!-- https://w3id.org/def/ProvKOS#hasLabel -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS/1.0#hasLabel">
-        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS/1.0#Class_number"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS#hasLabel">
+        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS#Class_number"/>
         <rdfs:range rdf:resource="http://www.w3.org/2008/05/skos-xl#Label"/>
         <rdfs:label xml:lang="en">hasLabel</rdfs:label>
         <skos:definition xml:lang="en">ClassNumber has the associated human readable label. One might distinguish a preferred label and an alternative label by using skosxl:prefLabel and skosxl:altLabel for tracking changes to all types of labels.</skos:definition>
@@ -142,11 +142,11 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#wasAuthorizedBy -->
+    <!-- https://w3id.org/def/ProvKOS#wasAuthorizedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS/1.0#wasAuthorizedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS/1.0#Class_number"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS#wasAuthorizedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS#Class_number"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">wasAuthorizedBy</rdfs:label>
         <skos:definition xml:lang="en">An &apos;unassigned&apos; number is being used to represent a concept.</skos:definition>
@@ -154,11 +154,11 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#wasDeprecatedBy -->
+    <!-- https://w3id.org/def/ProvKOS#wasDeprecatedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS/1.0#wasDeprecatedBy">
-        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS/1.0#Class_number"/>
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS#wasDeprecatedBy">
+        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS#Class_number"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">wasDeprecatedBy</rdfs:label>
         <skos:definition xml:lang="en">The existing Class Number is deprecated becoming &apos;unassigned&apos; .</skos:definition>
@@ -166,12 +166,12 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0/wasWarrantedBy -->
+    <!-- https://w3id.org/def/ProvKOS#wasWarrantedBy -->
 
 
-    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS/1.0/wasWarrantedBy">
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS#wasWarrantedBy">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
-        <rdfs:range rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
+        <rdfs:range rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
         <rdfs:label xml:lang="en">wasWarrantedBy</rdfs:label>
         <skos:definition xml:lang="en">Acitivty was performed based on editorial Warrant.</skos:definition>
     </owl:ObjectProperty>
@@ -194,7 +194,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
-        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS/1.0#Class_number"/>
+        <rdfs:domain rdf:resource="https://w3id.org/def/ProvKOS#Class_number"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
@@ -241,7 +241,7 @@
 
 
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
     </rdf:Description>
     
 
@@ -250,7 +250,7 @@
 
 
     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
     </rdf:Description>
     
 
@@ -260,7 +260,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/2008/05/skos-xl#Label">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/def/ProvKOS/1.0#Class_number"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/ProvKOS#Class_number"/>
         <rdfs:label xml:lang="en">Label</rdfs:label>
         <skos:definition xml:lang="en">The class skosxl:Label is a special class of lexical entities. An instance of the class skosxl:Label is a resource and may be named with a URI. An instance of the class skosxl:Label has a single literal form. (from SKOS-XL)</skos:definition>
     </owl:Class>
@@ -290,7 +290,7 @@
 
     <owl:Class rdf:about="http://www.w3.org/ns/prov#Entity">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <owl:disjointWith rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
     </owl:Class>
     
 
@@ -322,10 +322,10 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#Class_number -->
+    <!-- https://w3id.org/def/ProvKOS#Class_number -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0#Class_number">
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Class_number">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <rdfs:label xml:lang="en">Class Number</rdfs:label>
         <skos:definition xml:lang="en">ClassNumber is a numeric or alphanumeric notation to represent a concept. A concept is defined as a unit of thought, specific ideas or meanings established within a KOS. ClassNumber is assignable to classify information resources.An instance of ClassNumber may be named with a URI.</skos:definition>
@@ -333,10 +333,21 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#Expansion -->
+    <!-- https://w3id.org/def/ProvKOS#Document -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0#Expansion">
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Document">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
+        <rdfs:label xml:lang="en">Document</rdfs:label>
+        <skos:definition xml:lang="en">Documents to record editorial process which include proposals of changes, discussions of proposals, and suggested changes and its impacts.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/ProvKOS#Expansion -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Expansion">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">Expansion</rdfs:label>
         <skos:definition xml:lang="en">An expansion is when a concept is extended and the class number moves down to the narrower hierarchy.</skos:definition>
@@ -344,21 +355,21 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#Literature -->
+    <!-- https://w3id.org/def/ProvKOS#Literature -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0#Literature">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Literature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
         <rdfs:label xml:lang="en">Literature</rdfs:label>
         <skos:definition xml:lang="en">Citable literature providing an evidence warranted for editorial decision making.</skos:definition>
     </owl:Class>
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#Relocation -->
+    <!-- https://w3id.org/def/ProvKOS#Relocation -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0#Relocation">
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Relocation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">Relocation</rdfs:label>
         <skos:definition xml:lang="en">A relocation is moving a concept from a class number to another class number, this movement is outside of the hierarchical tree.</skos:definition>
@@ -366,10 +377,10 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#Replacement -->
+    <!-- https://w3id.org/def/ProvKOS#Replacement -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0#Replacement">
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Replacement">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">Replacement</rdfs:label>
         <skos:definition xml:lang="en">A replacement is having a label is replaced with another label.</skos:definition>
@@ -377,10 +388,10 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#Truncation -->
+    <!-- https://w3id.org/def/ProvKOS#Truncation -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0#Truncation">
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Truncation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
         <rdfs:label xml:lang="en">Truncation</rdfs:label>
         <skos:altLabel xml:lang="en">Discontinuation</skos:altLabel>
@@ -389,24 +400,13 @@
     
 
 
-    <!-- https://w3id.org/def/ProvKOS/1.0#Warrant -->
+    <!-- https://w3id.org/def/ProvKOS#Warrant -->
 
 
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0#Warrant">
+    <owl:Class rdf:about="https://w3id.org/def/ProvKOS#Warrant">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:label xml:lang="en">Warrant</rdfs:label>
         <skos:definition xml:lang="en">Any identifiable sources providing evidence warranted for editorial decision making.</skos:definition>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/def/ProvKOS/1.0/Document -->
-
-
-    <owl:Class rdf:about="https://w3id.org/def/ProvKOS/1.0/Document">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS/1.0#Warrant"/>
-        <rdfs:label xml:lang="en">Document</rdfs:label>
-        <skos:definition xml:lang="en">Documents to record editorial process which include proposals of changes, discussions of proposals, and suggested changes and its impacts.</skos:definition>
     </owl:Class>
 </rdf:RDF>
 
