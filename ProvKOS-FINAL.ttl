@@ -236,308 +236,308 @@
          <http://www.w3.org/2004/02/skos/core#definition> "Any identifiable sources providing evidence warranted for editorial decision making."@en .
 
 
-#################################################################
-#    Individuals
-#################################################################
-
-###  doi:10.4103/0253-7176.175131
-<doi:10.4103/0253-7176.175131> rdf:type owl:NamedIndividual ,
-                                        :Literature ;
-                               rdfs:label "Transvestism as a Symptom: A Case Series" .
-
-
-###  http://dewey.org/distributionserver/subscriptions/feed/23/349210
-<http://dewey.org/distributionserver/subscriptions/feed/23/349210> rdf:type owl:NamedIndividual ,
-                                                                            :Relocation ;
-                                                                   <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
-                                                                   :wasWarrantedBy <http://example.org#EPC_144-S30.1> ;
-                                                                   <http://www.w3.org/ns/prov#endedAtTime> "2023-07-27T21:39:54Z"^^xsd:dateTime ;
-                                                                   <http://purl.org/dc/elements/1.1/identifier> 349210 ;
-                                                                   <http://purl.org/dc/elements/1.1/title> "DDC_Updates_OvernightPublication_2023-07-27T21:39:54Z_CLASS" .
-
-
-###  http://dewey.org/distributionserver/subscriptions/feed/23/349268
-<http://dewey.org/distributionserver/subscriptions/feed/23/349268> rdf:type owl:NamedIndividual ,
-                                                                            :Truncation ;
-                                                                   <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
-                                                                   :wasWarrantedBy <http://www.example.org#EPC_143-S30.1> ;
-                                                                   <http://www.w3.org/ns/prov#endedAtTime> "2023-07-27T00:00:00"^^xsd:dateTime .
-
-
-###  http://dewey.org/distributionserver/subscriptions/feed/23/349269
-<http://dewey.org/distributionserver/subscriptions/feed/23/349269> rdf:type owl:NamedIndividual ,
-                                                                            :Replacement ;
-                                                                   <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
-                                                                   :wasWarrantedBy <http://www.example.org#EPC_143-S30.1> ;
-                                                                   <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T19:53:43"^^xsd:dateTime .
-
-
-###  http://dewey.org/distributionserver/subscriptions/feed/23/349291
-<http://dewey.org/distributionserver/subscriptions/feed/23/349291> rdf:type owl:NamedIndividual ,
-                                                                            <http://www.w3.org/ns/prov#Activity> ;
-                                                                   <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
-                                                                   :wasWarrantedBy <http://example.org#EPC_144-S61.1> ;
-                                                                   <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T02:00:00Z"^^xsd:dateTime ;
-                                                                   rdfs:comment "example entry" .
-
-
-###  http://dewey.org/distributionserver/subscriptions/feed/23/349292
-<http://dewey.org/distributionserver/subscriptions/feed/23/349292> rdf:type owl:NamedIndividual ,
-                                                                            :Replacement ;
-                                                                   <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
-                                                                   :wasWarrantedBy <http://example.org#EPC_144-S61.1> ;
-                                                                   <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T02:00:00Z"^^xsd:dateTime ;
-                                                                   rdfs:comment "example entry 2" .
-
-
-###  http://deweyldws01dxm1.dev.oclc.org/304.8
-<http://deweyldws01dxm1.dev.oclc.org/304.8> rdf:type owl:NamedIndividual ,
-                                                     :Class_number ;
-                                            <http://www.w3.org/ns/prov#wasRevisionOf> <http://deweyldws01dxm1.dev.oclc.org/304.82> ;
-                                            :hasLabel <http://example.org#Movement_of_people> ;
-                                            :wasAuthorizedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349268> ;
-                                            <http://www.w3.org/2004/02/skos/core#notation> 304.8 ;
-                                            rdfs:label 304.8 .
-
-
-###  http://deweyldws01dxm1.dev.oclc.org/304.809
-<http://deweyldws01dxm1.dev.oclc.org/304.809> rdf:type owl:NamedIndividual ,
-                                                       :Class_number ;
-                                              :hasLabel <http://example.org#Internal_movement> ;
-                                              :wasDeprecatedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349268> ;
-                                              <http://www.w3.org/2004/02/skos/core#notation> 304.809 ;
-                                              rdfs:label 304.809 .
-
-
-###  http://deweyldws01dxm1.dev.oclc.org/304.82
-<http://deweyldws01dxm1.dev.oclc.org/304.82> rdf:type owl:NamedIndividual ,
-                                                      :Class_number ;
-                                             :hasLabel <http://example.org#International_movement> ;
-                                             :wasDeprecatedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349268> ;
-                                             <http://www.w3.org/2004/02/skos/core#notation> 304.82 ;
-                                             rdfs:label 304.82 .
-
-
-###  http://deweyldws01dxm1.dev.oclc.org/304.83-304.89
-<http://deweyldws01dxm1.dev.oclc.org/304.83-304.89> rdf:type owl:NamedIndividual ,
-                                                             :Class_number ;
-                                                    :hasLabel <http://example.org#Immigration_to_specific_continents_countries> ,
-                                                              <http://example.org#Migration> ;
-                                                    <http://www.w3.org/2004/02/skos/core#notation> "304.83-304.89" .
-
-
-###  http://deweyldws01dxm1.dev.oclc.org/306.777
-<http://deweyldws01dxm1.dev.oclc.org/306.777> rdf:type owl:NamedIndividual ,
-                                                       :Class_number ;
-                                              <http://www.w3.org/ns/prov#wasRevisionOf> <http://deweyldws01dxm1.dev.oclc.org/306.778> ;
-                                              :hasLabel <http://example.org#Fetishism> ;
-                                              :wasAuthorizedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349210> ;
-                                              <http://www.w3.org/2004/02/skos/core#notation> 306.777 ;
-                                              rdfs:label 306.777 .
-
-
-###  http://deweyldws01dxm1.dev.oclc.org/306.778
-<http://deweyldws01dxm1.dev.oclc.org/306.778> rdf:type owl:NamedIndividual ,
-                                                       :Class_number ;
-                                              :hasLabel <http://example.org#Transvestism> ;
-                                              :wasDeprecatedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349210> ;
-                                              <http://www.w3.org/2004/02/skos/core#notation> 306.778 ;
-                                              rdfs:label 306.778 .
+# #################################################################
+# #    Individuals
+# #################################################################
+
+# ###  doi:10.4103/0253-7176.175131
+# <doi:10.4103/0253-7176.175131> rdf:type owl:NamedIndividual ,
+#                                         :Literature ;
+#                                rdfs:label "Transvestism as a Symptom: A Case Series" .
+
+
+# ###  http://dewey.org/distributionserver/subscriptions/feed/23/349210
+# <http://dewey.org/distributionserver/subscriptions/feed/23/349210> rdf:type owl:NamedIndividual ,
+#                                                                             :Relocation ;
+#                                                                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
+#                                                                    :wasWarrantedBy <http://example.org#EPC_144-S30.1> ;
+#                                                                    <http://www.w3.org/ns/prov#endedAtTime> "2023-07-27T21:39:54Z"^^xsd:dateTime ;
+#                                                                    <http://purl.org/dc/elements/1.1/identifier> 349210 ;
+#                                                                    <http://purl.org/dc/elements/1.1/title> "DDC_Updates_OvernightPublication_2023-07-27T21:39:54Z_CLASS" .
+
+
+# ###  http://dewey.org/distributionserver/subscriptions/feed/23/349268
+# <http://dewey.org/distributionserver/subscriptions/feed/23/349268> rdf:type owl:NamedIndividual ,
+#                                                                             :Truncation ;
+#                                                                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
+#                                                                    :wasWarrantedBy <http://www.example.org#EPC_143-S30.1> ;
+#                                                                    <http://www.w3.org/ns/prov#endedAtTime> "2023-07-27T00:00:00"^^xsd:dateTime .
+
+
+# ###  http://dewey.org/distributionserver/subscriptions/feed/23/349269
+# <http://dewey.org/distributionserver/subscriptions/feed/23/349269> rdf:type owl:NamedIndividual ,
+#                                                                             :Replacement ;
+#                                                                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
+#                                                                    :wasWarrantedBy <http://www.example.org#EPC_143-S30.1> ;
+#                                                                    <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T19:53:43"^^xsd:dateTime .
+
+
+# ###  http://dewey.org/distributionserver/subscriptions/feed/23/349291
+# <http://dewey.org/distributionserver/subscriptions/feed/23/349291> rdf:type owl:NamedIndividual ,
+#                                                                             <http://www.w3.org/ns/prov#Activity> ;
+#                                                                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
+#                                                                    :wasWarrantedBy <http://example.org#EPC_144-S61.1> ;
+#                                                                    <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T02:00:00Z"^^xsd:dateTime ;
+#                                                                    rdfs:comment "example entry" .
+
+
+# ###  http://dewey.org/distributionserver/subscriptions/feed/23/349292
+# <http://dewey.org/distributionserver/subscriptions/feed/23/349292> rdf:type owl:NamedIndividual ,
+#                                                                             :Replacement ;
+#                                                                    <http://www.w3.org/ns/prov#wasAssociatedWith> <http://example.org#DDC_Editoral_committee> ;
+#                                                                    :wasWarrantedBy <http://example.org#EPC_144-S61.1> ;
+#                                                                    <http://www.w3.org/ns/prov#endedAtTime> "2023-07-28T02:00:00Z"^^xsd:dateTime ;
+#                                                                    rdfs:comment "example entry 2" .
+
+
+# ###  http://deweyldws01dxm1.dev.oclc.org/304.8
+# <http://deweyldws01dxm1.dev.oclc.org/304.8> rdf:type owl:NamedIndividual ,
+#                                                      :Class_number ;
+#                                             <http://www.w3.org/ns/prov#wasRevisionOf> <http://deweyldws01dxm1.dev.oclc.org/304.82> ;
+#                                             :hasLabel <http://example.org#Movement_of_people> ;
+#                                             :wasAuthorizedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349268> ;
+#                                             <http://www.w3.org/2004/02/skos/core#notation> 304.8 ;
+#                                             rdfs:label 304.8 .
+
+
+# ###  http://deweyldws01dxm1.dev.oclc.org/304.809
+# <http://deweyldws01dxm1.dev.oclc.org/304.809> rdf:type owl:NamedIndividual ,
+#                                                        :Class_number ;
+#                                               :hasLabel <http://example.org#Internal_movement> ;
+#                                               :wasDeprecatedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349268> ;
+#                                               <http://www.w3.org/2004/02/skos/core#notation> 304.809 ;
+#                                               rdfs:label 304.809 .
+
+
+# ###  http://deweyldws01dxm1.dev.oclc.org/304.82
+# <http://deweyldws01dxm1.dev.oclc.org/304.82> rdf:type owl:NamedIndividual ,
+#                                                       :Class_number ;
+#                                              :hasLabel <http://example.org#International_movement> ;
+#                                              :wasDeprecatedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349268> ;
+#                                              <http://www.w3.org/2004/02/skos/core#notation> 304.82 ;
+#                                              rdfs:label 304.82 .
+
+
+# ###  http://deweyldws01dxm1.dev.oclc.org/304.83-304.89
+# <http://deweyldws01dxm1.dev.oclc.org/304.83-304.89> rdf:type owl:NamedIndividual ,
+#                                                              :Class_number ;
+#                                                     :hasLabel <http://example.org#Immigration_to_specific_continents_countries> ,
+#                                                               <http://example.org#Migration> ;
+#                                                     <http://www.w3.org/2004/02/skos/core#notation> "304.83-304.89" .
+
+
+# ###  http://deweyldws01dxm1.dev.oclc.org/306.777
+# <http://deweyldws01dxm1.dev.oclc.org/306.777> rdf:type owl:NamedIndividual ,
+#                                                        :Class_number ;
+#                                               <http://www.w3.org/ns/prov#wasRevisionOf> <http://deweyldws01dxm1.dev.oclc.org/306.778> ;
+#                                               :hasLabel <http://example.org#Fetishism> ;
+#                                               :wasAuthorizedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349210> ;
+#                                               <http://www.w3.org/2004/02/skos/core#notation> 306.777 ;
+#                                               rdfs:label 306.777 .
+
+
+# ###  http://deweyldws01dxm1.dev.oclc.org/306.778
+# <http://deweyldws01dxm1.dev.oclc.org/306.778> rdf:type owl:NamedIndividual ,
+#                                                        :Class_number ;
+#                                               :hasLabel <http://example.org#Transvestism> ;
+#                                               :wasDeprecatedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349210> ;
+#                                               <http://www.w3.org/2004/02/skos/core#notation> 306.778 ;
+#                                               rdfs:label 306.778 .
 
 
-###  http://deweyldws01dxm1.dev.oclc.org/391.68
-<http://deweyldws01dxm1.dev.oclc.org/391.68> rdf:type owl:NamedIndividual ,
-                                                      :Class_number ;
-                                             :hasLabel <http://example.org#Cross_dressing> ;
-                                             :wasAuthorizedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349210> ;
-                                             <http://www.w3.org/2004/02/skos/core#notation> 391.68 ;
-                                             rdfs:comment "example class iri 1" ;
-                                             rdfs:label 391.68 .
+# ###  http://deweyldws01dxm1.dev.oclc.org/391.68
+# <http://deweyldws01dxm1.dev.oclc.org/391.68> rdf:type owl:NamedIndividual ,
+#                                                       :Class_number ;
+#                                              :hasLabel <http://example.org#Cross_dressing> ;
+#                                              :wasAuthorizedBy <http://dewey.org/distributionserver/subscriptions/feed/23/349210> ;
+#                                              <http://www.w3.org/2004/02/skos/core#notation> 391.68 ;
+#                                              rdfs:comment "example class iri 1" ;
+#                                              rdfs:label 391.68 .
 
 
-###  http://deweyldws01dxm1.dev.oclc.org/616.8527
-<http://deweyldws01dxm1.dev.oclc.org/616.8527> rdf:type owl:NamedIndividual ,
-                                                        :Class_number ;
-                                               :hasLabel <http://example.org#Depressive_disorder> ,
-                                                         <http://example.org#Depressive_disorder_and_dysphoria> ;
-                                               <http://www.w3.org/2004/02/skos/core#notation> 616.8527 ;
-                                               rdfs:label 616.8527 .
+# ###  http://deweyldws01dxm1.dev.oclc.org/616.8527
+# <http://deweyldws01dxm1.dev.oclc.org/616.8527> rdf:type owl:NamedIndividual ,
+#                                                         :Class_number ;
+#                                                :hasLabel <http://example.org#Depressive_disorder> ,
+#                                                          <http://example.org#Depressive_disorder_and_dysphoria> ;
+#                                                <http://www.w3.org/2004/02/skos/core#notation> 616.8527 ;
+#                                                rdfs:label 616.8527 .
 
 
-###  http://deweyldws01dxm1.dev.oclc.org/616.85277
-<http://deweyldws01dxm1.dev.oclc.org/616.85277> rdf:type owl:NamedIndividual ,
-                                                         :Class_number ;
-                                                <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349291> ;
-                                                :hasLabel <http://example.org#Gender_dysphoria> ;
-                                                rdfs:comment "example class iri 2" ;
-                                                rdfs:label 616.85277 .
+# ###  http://deweyldws01dxm1.dev.oclc.org/616.85277
+# <http://deweyldws01dxm1.dev.oclc.org/616.85277> rdf:type owl:NamedIndividual ,
+#                                                          :Class_number ;
+#                                                 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349291> ;
+#                                                 :hasLabel <http://example.org#Gender_dysphoria> ;
+#                                                 rdfs:comment "example class iri 2" ;
+#                                                 rdfs:label 616.85277 .
 
 
-###  http://deweyldws01dxm1.dev.oclc.org/616.8583
-<http://deweyldws01dxm1.dev.oclc.org/616.8583> rdf:type owl:NamedIndividual ,
-                                                        :Class_number ;
-                                               :hasLabel <http://example.org#Sexual_disorders> ,
-                                                         <http://example.org#Sexual_disorders_and_gender-identity_disorders> ;
-                                               <http://www.w3.org/2004/02/skos/core#notation> 616.8583 ;
-                                               rdfs:label 616.8583 .
+# ###  http://deweyldws01dxm1.dev.oclc.org/616.8583
+# <http://deweyldws01dxm1.dev.oclc.org/616.8583> rdf:type owl:NamedIndividual ,
+#                                                         :Class_number ;
+#                                                :hasLabel <http://example.org#Sexual_disorders> ,
+#                                                          <http://example.org#Sexual_disorders_and_gender-identity_disorders> ;
+#                                                <http://www.w3.org/2004/02/skos/core#notation> 616.8583 ;
+#                                                rdfs:label 616.8583 .
 
 
-###  http://example.org#Cross_dressing
-<http://example.org#Cross_dressing> rdf:type owl:NamedIndividual ,
-                                             <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                    <http://www.w3.org/2008/05/skos-xl#literalForm> "Cross dressing" .
+# ###  http://example.org#Cross_dressing
+# <http://example.org#Cross_dressing> rdf:type owl:NamedIndividual ,
+#                                              <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                     <http://www.w3.org/2008/05/skos-xl#literalForm> "Cross dressing" .
 
 
-###  http://example.org#DDC_Editoral_committee
-<http://example.org#DDC_Editoral_committee> rdf:type owl:NamedIndividual ,
-                                                     <http://www.w3.org/ns/prov#Organization> .
+# ###  http://example.org#DDC_Editoral_committee
+# <http://example.org#DDC_Editoral_committee> rdf:type owl:NamedIndividual ,
+#                                                      <http://www.w3.org/ns/prov#Organization> .
 
 
-###  http://example.org#DSM-5
-<http://example.org#DSM-5> rdf:type owl:NamedIndividual ,
-                                    <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# ###  http://example.org#DSM-5
+# <http://example.org#DSM-5> rdf:type owl:NamedIndividual ,
+#                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://example.org#Depressive_disorder
-<http://example.org#Depressive_disorder> rdf:type owl:NamedIndividual ,
-                                                  <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                         <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
-                                         <http://www.w3.org/2008/05/skos-xl#literalForm> "Depressive disorder" .
+# ###  http://example.org#Depressive_disorder
+# <http://example.org#Depressive_disorder> rdf:type owl:NamedIndividual ,
+#                                                   <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                          <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
+#                                          <http://www.w3.org/2008/05/skos-xl#literalForm> "Depressive disorder" .
 
 
-###  http://example.org#Depressive_disorder_and_dysphoria
-<http://example.org#Depressive_disorder_and_dysphoria> rdf:type owl:NamedIndividual ,
-                                                                <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                                       <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
-                                                       <http://www.w3.org/ns/prov#wasRevisionOf> <http://example.org#Depressive_disorder> ;
-                                                       <http://www.w3.org/2008/05/skos-xl#literalForm> "Depressive disorder and dysphoria" .
+# ###  http://example.org#Depressive_disorder_and_dysphoria
+# <http://example.org#Depressive_disorder_and_dysphoria> rdf:type owl:NamedIndividual ,
+#                                                                 <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                                        <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
+#                                                        <http://www.w3.org/ns/prov#wasRevisionOf> <http://example.org#Depressive_disorder> ;
+#                                                        <http://www.w3.org/2008/05/skos-xl#literalForm> "Depressive disorder and dysphoria" .
 
 
-###  http://example.org#EPC_144-S30.1
-<http://example.org#EPC_144-S30.1> rdf:type owl:NamedIndividual ,
-                                            :Document ;
-                                   :cite <doi:10.4103/0253-7176.175131> ,
-                                         <http://example.org#DSM-5> ,
-                                         <http://example.org#KOS_Concept_2> ,
-                                         <http://example.org#KOS_Concept_3> ,
-                                         <https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> .
+# ###  http://example.org#EPC_144-S30.1
+# <http://example.org#EPC_144-S30.1> rdf:type owl:NamedIndividual ,
+#                                             :Document ;
+#                                    :cite <doi:10.4103/0253-7176.175131> ,
+#                                          <http://example.org#DSM-5> ,
+#                                          <http://example.org#KOS_Concept_2> ,
+#                                          <http://example.org#KOS_Concept_3> ,
+#                                          <https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> .
 
 
-###  http://example.org#EPC_144-S61.1
-<http://example.org#EPC_144-S61.1> rdf:type owl:NamedIndividual ,
-                                            :Document ;
-                                   :cite <http://www.example.org#KOS_Concept_0> ,
-                                         <http://www.example.org#KOS_Concept_1> .
+# ###  http://example.org#EPC_144-S61.1
+# <http://example.org#EPC_144-S61.1> rdf:type owl:NamedIndividual ,
+#                                             :Document ;
+#                                    :cite <http://www.example.org#KOS_Concept_0> ,
+#                                          <http://www.example.org#KOS_Concept_1> .
 
 
-###  http://example.org#Fetishism
-<http://example.org#Fetishism> rdf:type owl:NamedIndividual ,
-                                        <http://www.w3.org/2008/05/skos-xl#Label> ;
-                               <http://www.w3.org/2008/05/skos-xl#literalForm> "Fetishism" .
+# ###  http://example.org#Fetishism
+# <http://example.org#Fetishism> rdf:type owl:NamedIndividual ,
+#                                         <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                <http://www.w3.org/2008/05/skos-xl#literalForm> "Fetishism" .
 
 
-###  http://example.org#Gender_dysphoria
-<http://example.org#Gender_dysphoria> rdf:type owl:NamedIndividual ,
-                                               <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                      <http://www.w3.org/2008/05/skos-xl#literalForm> "Gender dysphoria" .
+# ###  http://example.org#Gender_dysphoria
+# <http://example.org#Gender_dysphoria> rdf:type owl:NamedIndividual ,
+#                                                <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                       <http://www.w3.org/2008/05/skos-xl#literalForm> "Gender dysphoria" .
 
 
-###  http://example.org#ICD-11
-<http://example.org#ICD-11> rdf:type owl:NamedIndividual ,
-                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+# ###  http://example.org#ICD-11
+# <http://example.org#ICD-11> rdf:type owl:NamedIndividual ,
+#                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://example.org#Immigration_to_specific_continents_countries
-<http://example.org#Immigration_to_specific_continents_countries> rdf:type owl:NamedIndividual ,
-                                                                           <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                                                  <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349269> ;
-                                                                  <http://www.w3.org/2008/05/skos-xl#literalForm> "Immigration to specific continents, countries" .
+# ###  http://example.org#Immigration_to_specific_continents_countries
+# <http://example.org#Immigration_to_specific_continents_countries> rdf:type owl:NamedIndividual ,
+#                                                                            <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                                                   <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349269> ;
+#                                                                   <http://www.w3.org/2008/05/skos-xl#literalForm> "Immigration to specific continents, countries" .
 
 
-###  http://example.org#Internal_movement
-<http://example.org#Internal_movement> rdf:type owl:NamedIndividual ,
-                                                <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                       <http://www.w3.org/2008/05/skos-xl#literalForm> "Internal movement" .
+# ###  http://example.org#Internal_movement
+# <http://example.org#Internal_movement> rdf:type owl:NamedIndividual ,
+#                                                 <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                        <http://www.w3.org/2008/05/skos-xl#literalForm> "Internal movement" .
 
 
-###  http://example.org#International_movement
-<http://example.org#International_movement> rdf:type owl:NamedIndividual ,
-                                                     <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                            <http://www.w3.org/2008/05/skos-xl#literalForm> "International movement" .
+# ###  http://example.org#International_movement
+# <http://example.org#International_movement> rdf:type owl:NamedIndividual ,
+#                                                      <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                             <http://www.w3.org/2008/05/skos-xl#literalForm> "International movement" .
 
 
-###  http://example.org#KOS_Concept_2
-<http://example.org#KOS_Concept_2> rdf:type owl:NamedIndividual ,
-                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                   <http://www.w3.org/2004/02/skos/core#inScheme> <http://example.org#ICD-11> .
+# ###  http://example.org#KOS_Concept_2
+# <http://example.org#KOS_Concept_2> rdf:type owl:NamedIndividual ,
+#                                             <http://www.w3.org/2004/02/skos/core#Concept> ;
+#                                    <http://www.w3.org/2004/02/skos/core#inScheme> <http://example.org#ICD-11> .
 
 
-###  http://example.org#KOS_Concept_3
-<http://example.org#KOS_Concept_3> rdf:type owl:NamedIndividual ,
-                                            <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                   <http://www.w3.org/2004/02/skos/core#inScheme> <https://homosaurus.org/v3> .
+# ###  http://example.org#KOS_Concept_3
+# <http://example.org#KOS_Concept_3> rdf:type owl:NamedIndividual ,
+#                                             <http://www.w3.org/2004/02/skos/core#Concept> ;
+#                                    <http://www.w3.org/2004/02/skos/core#inScheme> <https://homosaurus.org/v3> .
 
 
-###  http://example.org#Migration
-<http://example.org#Migration> rdf:type owl:NamedIndividual ,
-                                        <http://www.w3.org/2008/05/skos-xl#Label> ;
-                               <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349269> ;
-                               <http://www.w3.org/2008/05/skos-xl#literalForm> "Migration" .
+# ###  http://example.org#Migration
+# <http://example.org#Migration> rdf:type owl:NamedIndividual ,
+#                                         <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349269> ;
+#                                <http://www.w3.org/2008/05/skos-xl#literalForm> "Migration" .
 
 
-###  http://example.org#Movement_of_people
-<http://example.org#Movement_of_people> rdf:type owl:NamedIndividual ,
-                                                 <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                        <http://www.w3.org/2008/05/skos-xl#literalForm> "Movement of people" .
+# ###  http://example.org#Movement_of_people
+# <http://example.org#Movement_of_people> rdf:type owl:NamedIndividual ,
+#                                                  <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                         <http://www.w3.org/2008/05/skos-xl#literalForm> "Movement of people" .
 
 
-###  http://example.org#Sexual_disorders
-<http://example.org#Sexual_disorders> rdf:type owl:NamedIndividual ,
-                                               <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                      <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
-                                      <http://www.w3.org/ns/prov#wasRevisionOf> <http://example.org#Sexual_disorders_and_gender-identity_disorders> ;
-                                      <http://www.w3.org/2008/05/skos-xl#literalForm> "sexual disorders" .
+# ###  http://example.org#Sexual_disorders
+# <http://example.org#Sexual_disorders> rdf:type owl:NamedIndividual ,
+#                                                <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                       <http://www.w3.org/ns/prov#wasGeneratedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
+#                                       <http://www.w3.org/ns/prov#wasRevisionOf> <http://example.org#Sexual_disorders_and_gender-identity_disorders> ;
+#                                       <http://www.w3.org/2008/05/skos-xl#literalForm> "sexual disorders" .
 
 
-###  http://example.org#Sexual_disorders_and_gender-identity_disorders
-<http://example.org#Sexual_disorders_and_gender-identity_disorders> rdf:type owl:NamedIndividual ,
-                                                                             <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                                                    <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
-                                                                    <http://www.w3.org/2008/05/skos-xl#literalForm> "Sexual disorders and gender-identity disorders" .
+# ###  http://example.org#Sexual_disorders_and_gender-identity_disorders
+# <http://example.org#Sexual_disorders_and_gender-identity_disorders> rdf:type owl:NamedIndividual ,
+#                                                                              <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                                                     <http://www.w3.org/ns/prov#wasInvalidatedBy> <http://dewey.org/distributionserver/subscriptions/feed/23/349292> ;
+#                                                                     <http://www.w3.org/2008/05/skos-xl#literalForm> "Sexual disorders and gender-identity disorders" .
 
 
-###  http://example.org#Transvestism
-<http://example.org#Transvestism> rdf:type owl:NamedIndividual ,
-                                           <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                  <http://www.w3.org/2008/05/skos-xl#literalForm> "Transvetism" .
+# ###  http://example.org#Transvestism
+# <http://example.org#Transvestism> rdf:type owl:NamedIndividual ,
+#                                            <http://www.w3.org/2008/05/skos-xl#Label> ;
+#                                   <http://www.w3.org/2008/05/skos-xl#literalForm> "Transvetism" .
 
 
-###  http://www.example.org#EPC_143-S30.1
-<http://www.example.org#EPC_143-S30.1> rdf:type owl:NamedIndividual .
+# ###  http://www.example.org#EPC_143-S30.1
+# <http://www.example.org#EPC_143-S30.1> rdf:type owl:NamedIndividual .
 
 
-###  http://www.example.org#KOS_Concept_0
-<http://www.example.org#KOS_Concept_0> rdf:type owl:NamedIndividual ,
-                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                       <http://www.w3.org/2004/02/skos/core#inScheme> <https://homosaurus.org/v3> .
+# ###  http://www.example.org#KOS_Concept_0
+# <http://www.example.org#KOS_Concept_0> rdf:type owl:NamedIndividual ,
+#                                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+#                                        <http://www.w3.org/2004/02/skos/core#inScheme> <https://homosaurus.org/v3> .
 
 
-###  http://www.example.org#KOS_Concept_1
-<http://www.example.org#KOS_Concept_1> rdf:type owl:NamedIndividual ,
-                                                <http://www.w3.org/2004/02/skos/core#Concept> ;
-                                       <http://www.w3.org/2004/02/skos/core#inScheme> <http://example.org#ICD-11> .
+# ###  http://www.example.org#KOS_Concept_1
+# <http://www.example.org#KOS_Concept_1> rdf:type owl:NamedIndividual ,
+#                                                 <http://www.w3.org/2004/02/skos/core#Concept> ;
+#                                        <http://www.w3.org/2004/02/skos/core#inScheme> <http://example.org#ICD-11> .
 
 
-###  https://homosaurus.org/v3
-<https://homosaurus.org/v3> rdf:type owl:NamedIndividual ,
-                                     <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
-                            rdfs:label "Homosaurus" .
+# ###  https://homosaurus.org/v3
+# <https://homosaurus.org/v3> rdf:type owl:NamedIndividual ,
+#                                      <http://www.w3.org/2004/02/skos/core#ConceptScheme> ;
+#                             rdfs:label "Homosaurus" .
 
 
-###  https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder
-<https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> rdf:type owl:NamedIndividual ,
-                                                                                                                     :Literature ;
-                                                                                                            rdfs:label "Transvestic Disorder" .
+# ###  https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder
+# <https://www.merckmanuals.com/professional/psychiatric-disorders/paraphilic-disorders/transvestic-disorder> rdf:type owl:NamedIndividual ,
+#                                                                                                                      :Literature ;
+#                                                                                                             rdfs:label "Transvestic Disorder" .
 
 
 ###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
