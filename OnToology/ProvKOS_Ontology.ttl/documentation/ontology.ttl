@@ -63,44 +63,44 @@
 <http://www.w3.org/ns/prov#wasRevisionOf> rdf:type owl:ObjectProperty .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#cite
-<https://w3id.org/def/ProvKOS/1.0#cite> rdf:type owl:ObjectProperty ;
-                                        rdfs:domain <https://w3id.org/def/ProvKOS/1.0#Warrant> ;
-                                        rdfs:range <https://w3id.org/def/ProvKOS/1.0#Warrant> ;
-                                        rdfs:label "cite"@en ;
-                                        <http://www.w3.org/2004/02/skos/core#definition> "Subclasses of Warrant cite other subclasses of Warrant."@en .
+###  https://w3id.org/def/ProvKOS#cite
+:cite rdf:type owl:ObjectProperty ;
+      rdfs:domain :Warrant ;
+      rdfs:range :Warrant ;
+      rdfs:label "cite"@en ;
+      <http://www.w3.org/2004/02/skos/core#definition> "Subclasses of Warrant cite other subclasses of Warrant."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#hasLabel
-<https://w3id.org/def/ProvKOS/1.0#hasLabel> rdf:type owl:ObjectProperty ;
-                                            rdfs:domain <https://w3id.org/def/ProvKOS/1.0#Class_number> ;
-                                            rdfs:range <http://www.w3.org/2008/05/skos-xl#Label> ;
-                                            rdfs:label "hasLabel"@en ;
-                                            <http://www.w3.org/2004/02/skos/core#definition> "ClassNumber has the associated human readable label. One might distinguish a preferred label and an alternative label by using skosxl:prefLabel and skosxl:altLabel for tracking changes to all types of labels."@en .
+###  https://w3id.org/def/ProvKOS#hasLabel
+:hasLabel rdf:type owl:ObjectProperty ;
+          rdfs:domain :Class_number ;
+          rdfs:range <http://www.w3.org/2008/05/skos-xl#Label> ;
+          rdfs:label "hasLabel"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "ClassNumber has the associated human readable label. One might distinguish a preferred label and an alternative label by using skosxl:prefLabel and skosxl:altLabel for tracking changes to all types of labels."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#wasAuthorizedBy
-<https://w3id.org/def/ProvKOS/1.0#wasAuthorizedBy> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <https://w3id.org/def/ProvKOS/1.0#Class_number> ;
-                                                   rdfs:range <http://www.w3.org/ns/prov#Activity> ;
-                                                   rdfs:label "wasAuthorizedBy"@en ;
-                                                   <http://www.w3.org/2004/02/skos/core#definition> "An 'unassigned' number is being used to represent a concept."@en .
+###  https://w3id.org/def/ProvKOS#wasAuthorizedBy
+:wasAuthorizedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Class_number ;
+                 rdfs:range <http://www.w3.org/ns/prov#Activity> ;
+                 rdfs:label "wasAuthorizedBy"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "An 'unassigned' number is being used to represent a concept."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#wasDeprecatedBy
-<https://w3id.org/def/ProvKOS/1.0#wasDeprecatedBy> rdf:type owl:ObjectProperty ;
-                                                   rdfs:domain <https://w3id.org/def/ProvKOS/1.0#Class_number> ;
-                                                   rdfs:range <http://www.w3.org/ns/prov#Activity> ;
-                                                   rdfs:label "wasDeprecatedBy"@en ;
-                                                   <http://www.w3.org/2004/02/skos/core#definition> "The existing Class Number is deprecated becoming 'unassigned' ."@en .
+###  https://w3id.org/def/ProvKOS#wasDeprecatedBy
+:wasDeprecatedBy rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Class_number ;
+                 rdfs:range <http://www.w3.org/ns/prov#Activity> ;
+                 rdfs:label "wasDeprecatedBy"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "The existing Class Number is deprecated becoming 'unassigned' ."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0/wasWarrantedBy
-<https://w3id.org/def/ProvKOS/1.0/wasWarrantedBy> rdf:type owl:ObjectProperty ;
-                                                  rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
-                                                  rdfs:range <https://w3id.org/def/ProvKOS/1.0#Warrant> ;
-                                                  rdfs:label "wasWarrantedBy"@en ;
-                                                  <http://www.w3.org/2004/02/skos/core#definition> "Acitivty was performed based on editorial Warrant."@en .
+###  https://w3id.org/def/ProvKOS#wasWarrantedBy
+:wasWarrantedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain <http://www.w3.org/ns/prov#Activity> ;
+                rdfs:range :Warrant ;
+                rdfs:label "wasWarrantedBy"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "Acitivty was performed based on editorial Warrant."@en .
 
 
 #################################################################
@@ -109,7 +109,7 @@
 
 ###  http://www.w3.org/2004/02/skos/core#notation
 <http://www.w3.org/2004/02/skos/core#notation> rdf:type owl:DatatypeProperty ;
-                                               rdfs:domain <https://w3id.org/def/ProvKOS/1.0#Class_number> ;
+                                               rdfs:domain :Class_number ;
                                                rdfs:range xsd:decimal .
 
 
@@ -133,17 +133,17 @@
 #################################################################
 
 ###  http://www.w3.org/2004/02/skos/core#Concept
-<http://www.w3.org/2004/02/skos/core#Concept> rdfs:subClassOf <https://w3id.org/def/ProvKOS/1.0#Warrant> .
+<http://www.w3.org/2004/02/skos/core#Concept> rdfs:subClassOf :Warrant .
 
 
 ###  http://www.w3.org/2004/02/skos/core#ConceptScheme
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdfs:subClassOf <https://w3id.org/def/ProvKOS/1.0#Warrant> .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdfs:subClassOf :Warrant .
 
 
 ###  http://www.w3.org/2008/05/skos-xl#Label
 <http://www.w3.org/2008/05/skos-xl#Label> rdf:type owl:Class ;
                                           rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                          owl:disjointWith <https://w3id.org/def/ProvKOS/1.0#Class_number> ;
+                                          owl:disjointWith :Class_number ;
                                           rdfs:label "Label"@en ;
                                           <http://www.w3.org/2004/02/skos/core#definition> "The class skosxl:Label is a special class of lexical entities. An instance of the class skosxl:Label is a resource and may be named with a URI. An instance of the class skosxl:Label has a single literal form. (from SKOS-XL)"@en .
 
@@ -161,7 +161,7 @@
 ###  http://www.w3.org/ns/prov#Entity
 <http://www.w3.org/ns/prov#Entity> rdf:type owl:Class ;
                                    rdfs:subClassOf owl:Thing ;
-                                   owl:disjointWith <https://w3id.org/def/ProvKOS/1.0#Warrant> .
+                                   owl:disjointWith :Warrant .
 
 
 ###  http://www.w3.org/ns/prov#Organization
@@ -179,61 +179,61 @@
                                           rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#Class_number
-<https://w3id.org/def/ProvKOS/1.0#Class_number> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
-                                                rdfs:label "Class Number"@en ;
-                                                <http://www.w3.org/2004/02/skos/core#definition> "ClassNumber is a numeric or alphanumeric notation to represent a concept. A concept is defined as a unit of thought, specific ideas or meanings established within a KOS. ClassNumber is assignable to classify information resources.An instance of ClassNumber may be named with a URI."@en .
+###  https://w3id.org/def/ProvKOS#Class_number
+:Class_number rdf:type owl:Class ;
+              rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+              rdfs:label "Class Number"@en ;
+              <http://www.w3.org/2004/02/skos/core#definition> "ClassNumber is a numeric or alphanumeric notation to represent a concept. A concept is defined as a unit of thought, specific ideas or meanings established within a KOS. ClassNumber is assignable to classify information resources.An instance of ClassNumber may be named with a URI."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#Expansion
-<https://w3id.org/def/ProvKOS/1.0#Expansion> rdf:type owl:Class ;
-                                             rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-                                             rdfs:label "Expansion"@en ;
-                                             <http://www.w3.org/2004/02/skos/core#definition> "An expansion is when a concept is extended and the class number moves down to the narrower hierarchy."@en .
+###  https://w3id.org/def/ProvKOS#Document
+:Document rdf:type owl:Class ;
+          rdfs:subClassOf :Warrant ;
+          rdfs:label "Document"@en ;
+          <http://www.w3.org/2004/02/skos/core#definition> "Documents to record editorial process which include proposals of changes, discussions of proposals, and suggested changes and its impacts."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#Literature
-<https://w3id.org/def/ProvKOS/1.0#Literature> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://w3id.org/def/ProvKOS/1.0#Warrant> ;
-                                              rdfs:label "Literature"@en ;
-                                              <http://www.w3.org/2004/02/skos/core#definition> "Citable literature providing an evidence warranted for editorial decision making."@en .
+###  https://w3id.org/def/ProvKOS#Expansion
+:Expansion rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+           rdfs:label "Expansion"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "An expansion is when a concept is extended and the class number moves down to the narrower hierarchy."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#Relocation
-<https://w3id.org/def/ProvKOS/1.0#Relocation> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-                                              rdfs:label "Relocation"@en ;
-                                              <http://www.w3.org/2004/02/skos/core#definition> "A relocation is moving a concept from a class number to another class number, this movement is outside of the hierarchical tree."@en .
+###  https://w3id.org/def/ProvKOS#Literature
+:Literature rdf:type owl:Class ;
+            rdfs:subClassOf :Warrant ;
+            rdfs:label "Literature"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "Citable literature providing an evidence warranted for editorial decision making."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#Replacement
-<https://w3id.org/def/ProvKOS/1.0#Replacement> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-                                               rdfs:label "Replacement"@en ;
-                                               <http://www.w3.org/2004/02/skos/core#definition> "A replacement is having a label is replaced with another label."@en .
+###  https://w3id.org/def/ProvKOS#Relocation
+:Relocation rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+            rdfs:label "Relocation"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A relocation is moving a concept from a class number to another class number, this movement is outside of the hierarchical tree."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#Truncation
-<https://w3id.org/def/ProvKOS/1.0#Truncation> rdf:type owl:Class ;
-                                              rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
-                                              rdfs:label "Truncation"@en ;
-                                              <http://www.w3.org/2004/02/skos/core#altLabel> "Discontinuation"@en ;
-                                              <http://www.w3.org/2004/02/skos/core#definition> "A truncation is having a concept generalized thus the class number moves up to the broader hierarchy."@en .
+###  https://w3id.org/def/ProvKOS#Replacement
+:Replacement rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+             rdfs:label "Replacement"@en ;
+             <http://www.w3.org/2004/02/skos/core#definition> "A replacement is having a label is replaced with another label."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0#Warrant
-<https://w3id.org/def/ProvKOS/1.0#Warrant> rdf:type owl:Class ;
-                                           rdfs:subClassOf owl:Thing ;
-                                           rdfs:label "Warrant"@en ;
-                                           <http://www.w3.org/2004/02/skos/core#definition> "Any identifiable sources providing evidence warranted for editorial decision making."@en .
+###  https://w3id.org/def/ProvKOS#Truncation
+:Truncation rdf:type owl:Class ;
+            rdfs:subClassOf <http://www.w3.org/ns/prov#Activity> ;
+            rdfs:label "Truncation"@en ;
+            <http://www.w3.org/2004/02/skos/core#altLabel> "Discontinuation"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A truncation is having a concept generalized thus the class number moves up to the broader hierarchy."@en .
 
 
-###  https://w3id.org/def/ProvKOS/1.0/Document
-<https://w3id.org/def/ProvKOS/1.0/Document> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://w3id.org/def/ProvKOS/1.0#Warrant> ;
-                                            rdfs:label "Document"@en ;
-                                            <http://www.w3.org/2004/02/skos/core#definition> "Documents to record editorial process which include proposals of changes, discussions of proposals, and suggested changes and its impacts."@en .
+###  https://w3id.org/def/ProvKOS#Warrant
+:Warrant rdf:type owl:Class ;
+         rdfs:subClassOf owl:Thing ;
+         rdfs:label "Warrant"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "Any identifiable sources providing evidence warranted for editorial decision making."@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -9,7 +9,7 @@
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "wasAuthorizedBy" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#wasAuthorizedBy",
+      "@id" : "https://w3id.org/def/ProvKOS#wasAuthorizedBy",
       "@type" : "@id"
     },
     "Organization" : {
@@ -60,7 +60,7 @@
       "@id" : "http://www.w3.org/ns/prov#Agent"
     },
     "cite" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#cite",
+      "@id" : "https://w3id.org/def/ProvKOS#cite",
       "@type" : "@id"
     },
     "wasInvalidatedBy" : {
@@ -68,17 +68,17 @@
       "@type" : "@id"
     },
     "wasDeprecatedBy" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#wasDeprecatedBy",
+      "@id" : "https://w3id.org/def/ProvKOS#wasDeprecatedBy",
       "@type" : "@id"
     },
     "identifier" : {
       "@id" : "http://purl.org/dc/elements/1.1/identifier"
     },
     "Class_number" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#Class_number"
+      "@id" : "https://w3id.org/def/ProvKOS#Class_number"
     },
     "Literature" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#Literature"
+      "@id" : "https://w3id.org/def/ProvKOS#Literature"
     },
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
@@ -87,10 +87,10 @@
       "@id" : "http://www.w3.org/2004/02/skos/core#definition"
     },
     "Truncation" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#Truncation"
+      "@id" : "https://w3id.org/def/ProvKOS#Truncation"
     },
     "Warrant" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#Warrant"
+      "@id" : "https://w3id.org/def/ProvKOS#Warrant"
     },
     "ConceptScheme" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
@@ -109,20 +109,20 @@
       "@id" : "http://www.w3.org/ns/prov#Entity"
     },
     "Replacement" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#Replacement"
+      "@id" : "https://w3id.org/def/ProvKOS#Replacement"
     },
     "wasWarrantedBy" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0/wasWarrantedBy",
+      "@id" : "https://w3id.org/def/ProvKOS#wasWarrantedBy",
       "@type" : "@id"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "Document" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0/Document"
+      "@id" : "https://w3id.org/def/ProvKOS#Document"
     },
     "hasLabel" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#hasLabel",
+      "@id" : "https://w3id.org/def/ProvKOS#hasLabel",
       "@type" : "@id"
     },
     "invalidated" : {
@@ -134,14 +134,14 @@
       "@type" : "@id"
     },
     "Expansion" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#Expansion"
+      "@id" : "https://w3id.org/def/ProvKOS#Expansion"
     },
     "generated" : {
       "@id" : "http://www.w3.org/ns/prov#generated",
       "@type" : "@id"
     },
     "Relocation" : {
-      "@id" : "https://w3id.org/def/ProvKOS/1.0#Relocation"
+      "@id" : "https://w3id.org/def/ProvKOS#Relocation"
     }
   }
 }
