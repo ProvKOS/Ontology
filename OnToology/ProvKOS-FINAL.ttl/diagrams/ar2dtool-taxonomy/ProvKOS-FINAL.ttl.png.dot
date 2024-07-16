@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; ":Agent" "base:Warrant" "base:Expansion" "base:Relocation" ":SoftwareAgent" "base:Replacement" "base:Literature" "base:Truncation" ":Organization" ":Entity" "base:Document" ":Label" ":Activity" "base:Class_number" ":Person" ":Influence" ":End" ":Derivation" ":Quotation" ":Collection" ":InstantaneousEvent" ":Delegation" ":Invalidation" ":Bundle" ":Usage" ":Attribution" ":PrimarySource" "owl:Thing" ":ActivityInfluence" ":EmptyCollection" ":Revision" ":Communication" ":Association" ":Start" ":Plan" ":EntityInfluence" ":AgentInfluence" ":Generation" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
+node [shape = rectangle, color="black"]; ":Agent" "base:Warrant" "base:Expansion" "base:Relocation" ":SoftwareAgent" "base:Replacement" "base:Literature" "base:Truncation" ":Organization" ":Entity" "base:Document" "http://www.w3.org/2008/05/skos-xl#Label" ":Activity" "base:Class_number" ":Person" ":Influence" ":End" ":Derivation" ":Quotation" ":Collection" ":InstantaneousEvent" ":Delegation" ":Invalidation" ":Bundle" ":Usage" ":Attribution" ":PrimarySource" "owl:Thing" ":ActivityInfluence" ":EmptyCollection" ":Revision" ":Communication" ":Association" ":Start" ":Plan" ":EntityInfluence" ":AgentInfluence" ":Generation" "skos:OrderedCollection" "skos:Collection" "skos:ConceptScheme" "skos:Concept" ; /*classes style*/
 	":Revision" -> ":Derivation" [ label = "rdfs:subClassOf" ];
 	"skos:Concept" -> "base:Warrant" [ label = "rdfs:subClassOf" ];
 	":Association" -> ":AgentInfluence" [ label = "rdfs:subClassOf" ];
@@ -37,7 +37,7 @@ node [shape = rectangle, color="black"]; ":Agent" "base:Warrant" "base:Expansion
 	":Collection" -> ":Entity" [ label = "rdfs:subClassOf" ];
 	":Agent" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	"base:Truncation" -> ":Activity" [ label = "rdfs:subClassOf" ];
-	":Label" -> ":Entity" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2008/05/skos-xl#Label" -> ":Entity" [ label = "rdfs:subClassOf" ];
 	":Activity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
 	":Organization" -> ":Agent" [ label = "rdfs:subClassOf" ];
 	":End" -> ":EntityInfluence" [ label = "rdfs:subClassOf" ];
