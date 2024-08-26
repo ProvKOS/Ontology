@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "prov:Agent" "ProvKOS:Warrant" "ProvKOS:Expansion" "ProvKOS:Relocation" "prov:SoftwareAgent" "ProvKOS:Replacement" "ProvKOS:Literature" "skos:ConceptScheme" "ProvKOS:Truncation" "prov:Organization" "prov:Entity" "ProvKOS:Document" "skos-xl:Label" "skos:Concept" "prov:Activity" "ProvKOS:Class_number" "prov:Person" "prov:Influence" "prov:End" "prov:Derivation" "prov:Quotation" "prov:Collection" "prov:InstantaneousEvent" "prov:Delegation" "prov:Invalidation" "prov:Bundle" "prov:Usage" "prov:Attribution" "prov:PrimarySource" "owl:Thing" "prov:ActivityInfluence" "prov:EmptyCollection" "prov:Revision" "prov:Communication" "prov:Association" "prov:Start" "prov:Plan" "prov:EntityInfluence" "prov:AgentInfluence" "prov:Generation" "skos:OrderedCollection" "skos:Collection" ; /*classes style*/
+	"prov:Revision" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"skos:Concept" -> "ProvKOS:Warrant" [ label = "rdfs:subClassOf" ];
+	"prov:Association" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Literature" -> "ProvKOS:Warrant" [ label = "rdfs:subClassOf" ];
+	"prov:EmptyCollection" -> "prov:Collection" [ label = "rdfs:subClassOf" ];
+	"prov:Derivation" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Plan" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"skos:ConceptScheme" -> "ProvKOS:Warrant" [ label = "rdfs:subClassOf" ];
+	"prov:Attribution" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Relocation" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"prov:Bundle" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Communication" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:EntityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Expansion" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Class_number" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:PrimarySource" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:SoftwareAgent" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:Person" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Replacement" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Document" -> "ProvKOS:Warrant" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:AgentInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"skos:OrderedCollection" -> "skos:Collection" [ label = "rdfs:subClassOf" ];
+	"prov:Entity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"prov:Quotation" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Collection" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Agent" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Truncation" -> "prov:Activity" [ label = "rdfs:subClassOf" ];
+	"skos-xl:Label" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Activity" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"prov:Organization" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"ProvKOS:Warrant" -> "owl:Thing" [ label = "rdfs:subClassOf" ];
+	"prov:ActivityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:Delegation" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+
+}
