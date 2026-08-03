@@ -145,6 +145,12 @@ This section provides details for each class and property defined by ProvKOS: An
    <dd>
     <a href="#Warrant" title="https://w3id.org/def/ProvKOS#Warrant">Warrant</a> <sup class="type-c" title="class">c</sup>
    </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#documentDate" title="https://w3id.org/def/ProvKOS#documentDate">documentDate</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
   </dl>
  </div>
  <div class="entity" id="http://www.w3.org/ns/prov#Entity">
@@ -523,8 +529,32 @@ This section provides details for each class and property defined by ProvKOS: An
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
  <h3 id="dataproperties-headline" class="list">Data Properties</h3>
  <ul class="hlist">
+  <li><a href="#documentDate" title="https://w3id.org/def/ProvKOS#documentDate">documentDate</a></li>
   <li><a href="#http://www.w3.org/2008/05/skos-xl#literalForm" title="http://www.w3.org/2008/05/skos-xl#literalForm">literalForm</a></li>
  </ul>
+ <div class="entity" id="documentDate">
+  <h3>documentDate<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/def/ProvKOS#documentDate</p>
+  <div class="comment">
+   <span class="markdown">The date of an editorial document serving as a warrant.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Document" title="https://w3id.org/def/ProvKOS#Document">Document</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#date" target="_blank" title="http://www.w3.org/2001/XMLSchema#date">date</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="http://www.w3.org/2008/05/skos-xl#literalForm">
   <h3>literalForm<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2008/05/skos-xl#literalForm</p>

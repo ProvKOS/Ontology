@@ -27,6 +27,23 @@
 # http://www.w3.org/2004/02/skos/core#definition
 <http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# https://w3id.org/def/ProvKOS#documentURI
+<https://w3id.org/def/ProvKOS#documentURI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://w3id.org/def/ProvKOS#documentURI> <http://www.w3.org/2000/01/rdf-schema#label> "documentURI"@en .
+<https://w3id.org/def/ProvKOS#documentURI> <http://www.w3.org/2004/02/skos/core#definition> "A dereferenceable URI at which an editorial document serving as a warrant is available."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # 
 # 
 # #################################################################
@@ -123,6 +140,13 @@
 # 
 # http://www.w3.org/ns/prov#startedAtTime
 <http://www.w3.org/ns/prov#startedAtTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/def/ProvKOS#documentDate
+<https://w3id.org/def/ProvKOS#documentDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/def/ProvKOS#documentDate> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/def/ProvKOS#Document> .
+<https://w3id.org/def/ProvKOS#documentDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/def/ProvKOS#documentDate> <http://www.w3.org/2000/01/rdf-schema#label> "documentDate"@en .
+<https://w3id.org/def/ProvKOS#documentDate> <http://www.w3.org/2004/02/skos/core#definition> "The date of an editorial document serving as a warrant."@en .
 # 
 # 
 # 
