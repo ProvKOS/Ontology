@@ -36,12 +36,11 @@
     <dcterms:creator>Inkyung Choi</dcterms:creator>
     <dcterms:creator>Jessica Yi-Yun Cheng</dcterms:creator>
     <dcterms:title xml:lang="en">ProvKOS: An Application Profile for Documenting Provenance in Knowledge Organization Systems</dcterms:title>
-    <owl:versionInfo>1.1</owl:versionInfo>
-    <rdfs:comment xml:lang="en">ProvKOS extends SKOS and PROV-O to represent the provenance of editorial activities in Knowledge Organization Systems (KOS): typed change activities, warrant structures, and the relationships among entities, activities, agents, and warrants. Revised in response to peer review (2026): class renamed to ProvKOS:ClassNumber; domain of ProvKOS:hasLabel broadened to prov:Entity; explicit PROV-O sub-property alignments; example individuals moved to separate data files.</rdfs:comment>
+    <owl:versionInfo>1.2</owl:versionInfo>
+    <rdfs:comment xml:lang="en">ProvKOS extends SKOS and PROV-O to represent the provenance of editorial activities in Knowledge Organization Systems (KOS): typed change activities, warrant structures, and the relationships among entities, activities, agents, and warrants. Revised in response to peer review (2026): class renamed to ProvKOS:ClassNumber; domain of ProvKOS:hasLabel broadened to prov:Entity; explicit PROV-O sub-property alignments; example individuals moved to separate data files. Version 1.2: the global axioms declaring skos:Concept and skos:ConceptScheme as subclasses of ProvKOS:Warrant were removed; warrant-hood is now typed by role through the ranges of ProvKOS:wasWarrantedBy and ProvKOS:cite, so that only resources actually participating as warrants are inferred to be ProvKOS:Warrant instances.</rdfs:comment>
   </owl:Ontology>
   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
-    <skos:definition xml:lang="en">Within the scope of this application profile, any SKOS concept scheme can serve as a warrant for editorial decision making (e.g., ICD-11 or a national authority file supporting a change).</skos:definition>
+    <skos:definition xml:lang="en">Within the scope of this application profile, any SKOS concept scheme can serve as a warrant for editorial decision making (e.g., ICD-11 or a national authority file supporting a change). Warrant-hood is acquired by role: a concept scheme used as the object of ProvKOS:wasWarrantedBy or ProvKOS:cite is inferred to be a ProvKOS:Warrant via those properties' ranges; other concept schemes are unaffected.</skos:definition>
   </owl:Class>
   <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
   <owl:ObjectProperty rdf:about="https://w3id.org/def/ProvKOS#wasWarrantedBy">
@@ -130,8 +129,7 @@
     <skos:definition xml:lang="en">ClassNumber is a numeric or alphanumeric notation to represent a concept. A concept is defined as a unit of thought, specific ideas or meanings established within a KOS. ClassNumber is assignable to classify information resources. An instance of ClassNumber may be named with a URI.</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
-    <rdfs:subClassOf rdf:resource="https://w3id.org/def/ProvKOS#Warrant"/>
-    <skos:definition xml:lang="en">Within the scope of this application profile, any SKOS concept can serve as a warrant for editorial decision making (e.g., a concept in an external vocabulary such as Homosaurus supporting a label change).</skos:definition>
+    <skos:definition xml:lang="en">Within the scope of this application profile, any SKOS concept can serve as a warrant for editorial decision making (e.g., a concept in an external vocabulary such as Homosaurus supporting a label change). Warrant-hood is acquired by role: a concept used as the object of ProvKOS:wasWarrantedBy or ProvKOS:cite is inferred to be a ProvKOS:Warrant via those properties' ranges; other concepts are unaffected.</skos:definition>
   </owl:Class>
   <owl:Class rdf:about="http://www.w3.org/2008/05/skos-xl#Label">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
