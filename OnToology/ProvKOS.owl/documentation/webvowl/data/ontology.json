@@ -1,0 +1,821 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://w3id.org/def/ProvKOS", "http://www.w3.org/2008/05/skos-xl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/2004/02/skos/core" ],
+    "title" : {
+      "en" : "ProvKOS: An Application Profile for Documenting Provenance in Knowledge Organization Systems"
+    },
+    "iri" : "https://w3id.org/def/ProvKOS",
+    "version" : "1.2",
+    "author" : [ "Inkyung Choi", "Jessica Yi-Yun Cheng" ],
+    "comments" : {
+      "en" : "ProvKOS extends SKOS and PROV-O to represent the provenance of editorial activities in Knowledge Organization Systems (KOS): typed change activities, warrant structures, and the relationships among entities, activities, agents, and warrants. Revised in response to peer review (2026): class renamed to ProvKOS:ClassNumber; domain of ProvKOS:hasLabel broadened to prov:Entity; explicit PROV-O sub-property alignments; example individuals moved to separate data files. Version 1.2: the global axioms declaring skos:Concept and skos:ConceptScheme as subclasses of ProvKOS:Warrant were removed; warrant-hood is now typed by role through the ranges of ProvKOS:wasWarrantedBy and ProvKOS:cite, so that only resources actually participating as warrants are inferred to be ProvKOS:Warrant instances."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Inkyung Choi",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Jessica Yi-Yun Cheng",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.2",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "ProvKOS: An Application Profile for Documenting Provenance in Knowledge Organization Systems",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "43",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "45",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#Activity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Activity"
+    },
+    "subClasses" : [ "4", "5", "6", "7" ],
+    "attributes" : [ "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#Concept",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Within the scope of this application profile, any SKOS concept can serve as a warrant for editorial decision making (e.g., a concept in an external vocabulary such as Homosaurus supporting a label change). Warrant-hood is acquired by role: a concept used as the object of ProvKOS:wasWarrantedBy or ProvKOS:cite is inferred to be a ProvKOS:Warrant via those properties' ranges; other concepts are unaffected.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concept"
+    },
+    "attributes" : [ "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#Document",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Documents to record editorial process which include proposals of changes, discussions of proposals, and suggested changes and their impacts.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Document",
+      "en" : "Document"
+    },
+    "id" : "17",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Entity",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Entity"
+    },
+    "subClasses" : [ "19", "15" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Person",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#Replacement",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A replacement is having a label replaced with another label.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Replacement",
+      "en" : "Replacement"
+    },
+    "id" : "4",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Within the scope of this application profile, any SKOS concept scheme can serve as a warrant for editorial decision making (e.g., ICD-11 or a national authority file supporting a change). Warrant-hood is acquired by role: a concept scheme used as the object of ProvKOS:wasWarrantedBy or ProvKOS:cite is inferred to be a ProvKOS:Warrant via those properties' ranges; other concept schemes are unaffected.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ConceptScheme"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#Expansion",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An expansion is when a concept is extended and the class number moves down to the narrower hierarchy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Expansion",
+      "en" : "Expansion"
+    },
+    "id" : "7",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Agent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent"
+    },
+    "subClasses" : [ "21", "30", "28" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#SoftwareAgent",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SoftwareAgent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "28",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#Relocation",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A relocation is moving a concept from a class number to another class number; this movement is outside of the hierarchical tree.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Relocation",
+      "en" : "Relocation"
+    },
+    "id" : "6",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "43",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "45",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#Warrant",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Any identifiable sources providing evidence warranted for editorial decision making.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Warrant",
+      "en" : "Warrant"
+    },
+    "subClasses" : [ "17", "38" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#Literature",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Citable literature providing evidence warranted for editorial decision making.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Literature",
+      "en" : "Literature"
+    },
+    "id" : "38",
+    "superClasses" : [ "10" ]
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos-xl#Label",
+    "baseIri" : "http://www.w3.org/2008/05/skos-xl",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The class skosxl:Label is a special class of lexical entities. An instance of the class skosxl:Label is a resource and may be named with a URI. An instance of the class skosxl:Label has a single literal form. (from SKOS-XL)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Label",
+      "en" : "Label"
+    },
+    "attributes" : [ "external" ],
+    "id" : "19",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#Truncation",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "altLabel" : [ {
+        "identifier" : "altLabel",
+        "language" : "en",
+        "value" : "Discontinuation",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A truncation is having a concept generalized, thus the class number moves up to the broader hierarchy.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Truncation",
+      "en" : "Truncation"
+    },
+    "id" : "5",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#Organization",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Organization"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30",
+    "superClasses" : [ "22" ]
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#ClassNumber",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "ClassNumber is a numeric or alphanumeric notation to represent a concept. A concept is defined as a unit of thought, specific ideas or meanings established within a KOS. ClassNumber is assignable to classify information resources. An instance of ClassNumber may be named with a URI.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ClassNumber",
+      "en" : "Class Number"
+    },
+    "id" : "15",
+    "superClasses" : [ "18" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.w3.org/ns/prov#startedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "startedAtTime"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#wasWarrantedBy",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "range" : "10",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The Activity was performed based on an editorial Warrant.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasWarrantedBy",
+      "en" : "wasWarrantedBy"
+    },
+    "superproperty" : [ "11" ],
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasInvalidatedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasInvalidatedBy"
+    },
+    "domain" : "1",
+    "subproperty" : [ "13" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#wasAuthorizedBy",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "range" : "3",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An 'unassigned' class number is being used to represent a concept. Specific to classification systems in which class numbers persist as reusable containers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasAuthorizedBy",
+      "en" : "wasAuthorizedBy"
+    },
+    "superproperty" : [ "16" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasAssociatedWith"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasRevisionOf",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasRevisionOf"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#endedAtTime",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "endedAtTime"
+    },
+    "domain" : "1",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "25"
+  }, {
+    "range" : "22",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "22",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#generated",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "generated"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "10",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "18",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#documentDate",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "range" : "36",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The date of an editorial document serving as a warrant.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "documentDate",
+      "en" : "documentDate"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "range" : "10",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "range" : "18",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "40"
+  }, {
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasGeneratedBy"
+    },
+    "domain" : "1",
+    "subproperty" : [ "14" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2004/02/skos/core#inScheme",
+    "baseIri" : "http://www.w3.org/2004/02/skos/core",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "inScheme"
+    },
+    "domain" : "8",
+    "attributes" : [ "external", "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasInfluencedBy",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "wasInfluencedBy"
+    },
+    "domain" : "1",
+    "subproperty" : [ "9" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#invalidated",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "invalidated"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "44"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#cite",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "range" : "10",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A Warrant cites another Warrant, enabling the construction of warrant chains across heterogeneous evidence types (e.g., a Document citing a ConceptScheme that cites Literature).",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "cite",
+      "en" : "cite"
+    },
+    "domain" : "10",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "15",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAttributedTo",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "wasAttributedTo"
+    },
+    "domain" : "18",
+    "attributes" : [ "external", "object" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3.org/2008/05/skos-xl#literalForm",
+    "baseIri" : "http://www.w3.org/2008/05/skos-xl",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "literalForm",
+      "en" : "literalForm"
+    },
+    "domain" : "19",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#hasLabel",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "range" : "19",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A KOS entity (e.g., a class number in a classification system, or an authority record in a compiled vocabulary) has one or more associated human-readable labels. Preferred and alternative labels can be distinguished using skosxl:prefLabel and skosxl:altLabel for tracking changes to all types of labels.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasLabel",
+      "en" : "hasLabel"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/def/ProvKOS#wasDeprecatedBy",
+    "baseIri" : "https://w3id.org/def/ProvKOS",
+    "range" : "3",
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The existing class number is deprecated, becoming 'unassigned'. Specific to classification systems in which class numbers persist as reusable containers.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "wasDeprecatedBy",
+      "en" : "wasDeprecatedBy"
+    },
+    "superproperty" : [ "12" ],
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "13"
+  } ]
+}
